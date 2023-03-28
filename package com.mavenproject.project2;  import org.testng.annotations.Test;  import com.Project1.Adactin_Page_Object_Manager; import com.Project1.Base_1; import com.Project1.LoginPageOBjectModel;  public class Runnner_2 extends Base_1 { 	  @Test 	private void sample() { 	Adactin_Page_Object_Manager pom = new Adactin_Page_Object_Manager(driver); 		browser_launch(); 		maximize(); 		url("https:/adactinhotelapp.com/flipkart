@@ -1,0 +1,22 @@
+package com.mavenproject.project2;
+
+import org.testng.annotations.Test;
+
+import com.Project1.Adactin_Page_Object_Manager;
+import com.Project1.Base_1;
+import com.Project1.LoginPageOBjectModel;
+
+public class Runnner_2 extends Base_1 {
+	 
+@Test
+	private void sample() {
+	Adactin_Page_Object_Manager pom = new Adactin_Page_Object_Manager(driver);
+		browser_launch();
+		maximize();
+		url("https://adactinhotelapp.com/");
+		login(pom.getLppm().getLogin(), "hkfhkjhv");
+		login(pom.getLppm().getLogin(), "bvcmhgg");
+		login(pom.getLppm().getPassword(), ",jhv");
+	
+
+	}
